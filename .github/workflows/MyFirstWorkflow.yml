@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
 
-      - name: List all filtes in the repo
+      - name: List all files in the repo
         uses: |
-          echo "The repository ${{github.repository}} contains the following files:"
+          echo "The repository ${{ github.repository }} contains the following files:"
           tree
